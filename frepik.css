@@ -1,0 +1,186 @@
+*,
+html {
+  padding: 0;
+  margin: 0;
+}
+
+/* Navigation Bar */
+nav {
+  background-color: rgb(205, 231, 240);
+  display: flex;
+  height: 50px;
+  align-items: center;
+  justify-content: space-around;
+  font-family: sans-serif;
+  font-size: 14px;
+  box-shadow: 0 5px 2px -2px rgba(0, 0, 0, 0.24);
+  position: fixed;
+  right: 0;
+  left: 0;
+}
+body {
+  height: 1000px;
+}
+.ul-Bar {
+  display: flex;
+  list-style-type: none;
+}
+
+.ul-Bar a {
+  padding: 15px;
+  text-decoration: none;
+  color: rgb(24, 63, 190);
+  font-family: "Montserrat", sans-serif;
+}
+
+.ul-Bar2 {
+  display: flex;
+  list-style-type: none;
+}
+
+.ul-Bar2 a {
+  padding: 15px;
+  text-decoration: none;
+  color: rgb(24, 63, 190);
+  font-family: "Montserrat", sans-serif;
+}
+
+.ul-Bar2 li:nth-child(2) a {
+  color: orangered;
+}
+
+.ul-Bar2 li:nth-child(2) a:hover {
+  color: black;
+}
+
+a:hover {
+  color: black;
+  border-bottom: 1px solid rgb(24, 63, 190);
+  background-color: rgba(158, 190, 202, 0.301);
+}
+
+.logo img {
+  height: 42px;
+  padding-left: 10px;
+  padding-right: -10px;
+}
+
+/* Button */
+.button {
+  font-size: 14px;
+  padding: 5px 15px;
+  background-color: rgb(205, 231, 240);
+  border-color: rgb(24, 63, 190);
+  border-radius: 3px;
+  border-style: solid;
+  cursor: pointer;
+  color: rgb(24, 63, 190);
+}
+.button:hover {
+  background-color: rgb(205, 231, 240);
+  border-color: black;
+  color: black;
+}
+
+/* BODY WEBSITE */
+.container-Body {
+  background-color: rgb(236, 250, 255);
+  height: 200vh;
+  position: relative;
+  z-index: -2;
+}
+
+.banner-Announcement {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100px;
+  font-size: 30px;
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  color: rgb(24, 63, 190);
+  padding-top: 40px;
+}
+
+h3 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 25px;
+  font-size: 20px;
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  color: rgb(24, 63, 190);
+  padding-bottom: 40px;
+}
+
+.sama2 {
+  border: 10px solid aquamarine;
+  height: 200px;
+  position: relative;
+  box-sizing: border-box;
+  text-align: center;
+  display: flex;
+  border-radius: 75px;
+}
+
+.sama {
+  height: 150px;
+  width: 150px;
+  position: relative;
+  margin: auto;
+  z-index: -1;
+  border-radius: 50%;
+}
+
+.satu {
+  background-color: salmon;
+}
+.dua {
+  background-color: lightgreen;
+}
+.tiga {
+  background-color: royalblue;
+}
+
+@media screen and (max-width: 1055px) {
+  .ul-Bar {
+    display: none;
+  }
+  .ul-Bar2 {
+    padding-right: 150px;
+  }
+
+  .logo {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  a:hover{
+    background-color: rgb(205, 231, 240);
+    text-decoration: none;
+    border: none;
+  }
+  .button {
+    margin-right: 20px;
+  }
+  
+}
+@media screen and (max-width: 875px) {
+  .ul-Bar {
+    display: none;
+  }
+  .ul-Bar2 {
+    display: none;
+  }
+
+  .logo {
+    margin-left: auto;
+    margin-right: auto;
+    margin: 0 auto;
+  }
+
+  .button {
+    display: none;
+
+  }
+}
